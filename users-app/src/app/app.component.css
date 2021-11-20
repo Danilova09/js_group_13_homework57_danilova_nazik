@@ -1,0 +1,10 @@
+.main-block {
+  width: 1000px;
+  /*border: 1px solid red;*/
+  margin: 50px auto;
+}
+
+.col {
+  /*border: 1px solid black;*/
+  padding: 0 30px;
+}
