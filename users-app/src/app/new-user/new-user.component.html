@@ -1,17 +1,16 @@
 <h4 class="text-center">Form</h4>
-
-<form (ngSubmit)="createUser()">
+<form (ngSubmit)="createUser()" ngNativeValidate>
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="name" class="form-control" id="name" placeholder="name" #nameInput>
+    <input required type="name" class="form-control" id="name" placeholder="name" #nameInput>
   </div>
   <div class="form-group mt-5">
     <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="name@example.com" #emailInput>
+    <input required type="email" class="form-control" id="email" placeholder="email@example.com" #emailInput>
   </div>
   <div class="form-group form-check my-4">
     <input type="checkbox" class="form-check-input" id="active" #checkboxActiveInput>
-    <label class="form-check-label" for="active">Активен да/нет</label>
+    <label class="form-check-label" for="active">Active yes/no</label>
   </div>
   <div class="form-group">
     <label for="role">Role</label>

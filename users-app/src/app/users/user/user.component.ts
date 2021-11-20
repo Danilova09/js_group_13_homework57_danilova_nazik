@@ -9,11 +9,12 @@ import { User } from '../../shared/user.model';
 export class UserComponent {
   @Input() user!: User;
   active = 'да';
+
   getActive() {
     if (this.user.active === true) {
-      this.active = 'да'
+      this.active = 'yes'
     } else {
-      this.active = 'нет';
+      this.active = 'no';
     }
     return this.active;
   }

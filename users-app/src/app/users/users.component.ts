@@ -1,15 +1,11 @@
-import { Component, Input } from '@angular/core';
-import { User } from '../shared/user.model';
+import { Component } from '@angular/core';
+import { UsersService } from '../shared/users.service';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.css']
+  styleUrls: ['./users.component.css'],
 })
 export class UsersComponent {
-  @Input() users!: User[];
-
-  getUsers() {
-    console.log(this.users);
-  }
+  constructor(public usersService: UsersService) {}
 }

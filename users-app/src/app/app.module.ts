@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { UsersComponent } from './users/users.component';
 import { UserComponent } from './users/user/user.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UsersService } from './shared/users.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
