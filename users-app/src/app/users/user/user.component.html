@@ -1,8 +1,8 @@
 <div class="card my-3">
   <div class="card-body">
-    <p><strong>Name: Lena </strong></p>
-    <p>Email: lena@mail.ru</p>
-    <p>active: no</p>
-    <p>role: admin</p>
+    <p><strong>Name: {{ user.name }} </strong></p>
+    <p>Email:  {{ user.email }} </p>
+    <p>active:  {{ getActive() }} </p>
+    <p>role:  {{ user.role }} </p>
   </div>
 </div>

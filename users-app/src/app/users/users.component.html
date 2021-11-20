@@ -1,6 +1,7 @@
 <h4 class="text-center">Users</h4>
-
-<app-user></app-user>
-<app-user></app-user>
-<app-user></app-user>
-<app-user></app-user>
+<div>{{ getUsers() }}</div>
+<app-user *ngFor="let user of users"
+[user]="user"></app-user>
+<!--<app-user></app-user>-->
+<!--<app-user></app-user>-->
+<!--<app-user></app-user>-->
